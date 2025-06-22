@@ -10,6 +10,10 @@ create_file:
       mkdir build
       touch build/somefiles.txt
 
+  artifacts:
+    paths:
+        build/
+
 test_File:
   image: alphine
   stage: test
