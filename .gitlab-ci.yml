@@ -1,21 +1,21 @@
 stages:
-  build
-  test
+  - build
+  - test
 
 create_file:
   image: alpine
   stage: build
   script:
-      echo "Building..."
-      mkdir build
-      touch build/somefiles.txt
+      - echo "Building..."
+      - mkdir build
+      - touch build/somefiles.txt
 
   artifacts:
     paths:
-        build/
+      - build/
 
 test_File:
   image: alpine
   stage: test
   script:
-      test -f build/somefiles.txt
+      - test -f build/somefiles.txt
