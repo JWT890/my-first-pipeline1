@@ -3,4 +3,4 @@ create_file:
   script:
       echo "Building..."
       mkdir build
-      touch build/somefile.txt
+      touch build/somefiles.txt
