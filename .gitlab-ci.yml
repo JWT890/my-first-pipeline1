@@ -15,7 +15,7 @@ create_file:
         build/
 
 test_File:
-  image: alphine
+  image: alpine
   stage: test
   script:
       test -f build/somefiles.txt
