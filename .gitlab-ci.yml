@@ -4,3 +4,8 @@ create_file:
       echo "Building..."
       mkdir build
       touch build/somefiles.txt
+
+test_File:
+  image: alphine
+  script:
+      test -f build/somefiles.txt
